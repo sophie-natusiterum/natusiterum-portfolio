@@ -1250,7 +1250,7 @@ button:hover {
     }
 
     .tooltip-txt {
-        visibility: visible;
+        visibility: hidden;
         border-radius: 5px;
         background-color: var(--ACCENTCOLOR);
         display: inline-block;
@@ -1666,7 +1666,7 @@ button:hover {
     }
 
     p {
-        font-size: 1.8vmax;
+        font-size: 130%;
     }
 
     button {
