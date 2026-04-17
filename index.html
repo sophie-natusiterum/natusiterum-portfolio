@@ -17,9 +17,9 @@
             <button class="carousel-btn display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
           <div class="carousel" oncontextmenu="return false;">
-            <div class="image-size"><img class="change-img" oncontextmenu="return false;" src="" alt=""/></div>
-            <div class="image-size"><img class="change-img change-img2" oncontextmenu="return false;" src="" alt=""/></div>
-            <div class="image-size"><img class="change-img change-img3" oncontextmenu="return false;" src="" alt=""/></div>
+            <picture class="image-size"><img class="change-img" oncontextmenu="return false;" src="" alt=""/></picture>
+            <picture class="image-size"><img class="change-img change-img2" oncontextmenu="return false;" src="" alt=""/></picture>
+            <picture class="image-size"><img class="change-img change-img3" oncontextmenu="return false;" src="" alt=""/></picture>
             <video class="change-img animations" onclick="playVid()" controls disablePictureInPicture controlsList="nodownload noplaybackrate noremoteplayback" oncontextmenu="return false;" preload="metadata" poster="/assets/img_4.png"><source
               src="/assets/2023-07-31 18-48-43.mp4"
               type="video/mp4"/>
@@ -44,12 +44,12 @@
           </div>
         </div>
           <footer class="dot-container">
-          <img class="dots" onclick="currentDiv(1)" src="assets/image_100dp_222222_FILL0_wght400_GRAD0_opsz48.png">
-          <img class="dots" onclick="currentDiv(2)" src="assets/image_100dp_222222_FILL0_wght400_GRAD0_opsz48.png">
-          <img class="dots" onclick="currentDiv(3)" src="assets/image_100dp_222222_FILL0_wght400_GRAD0_opsz48.png">
-          <img class="dots" onclick="currentDiv(4)" src="assets/play_circle_100dp_222222_FILL0_wght400_GRAD0_opsz48.png">
+            <img class="dots" onclick="currentDiv(1)" src="assets/image_100dp_222222_FILL0_wght400_GRAD0_opsz48.png">
+            <img class="dots" onclick="currentDiv(2)" src="assets/image_100dp_222222_FILL0_wght400_GRAD0_opsz48.png">
+            <img class="dots" onclick="currentDiv(3)" src="assets/image_100dp_222222_FILL0_wght400_GRAD0_opsz48.png">
+            <img class="dots" onclick="currentDiv(4)" src="assets/play_circle_100dp_222222_FILL0_wght400_GRAD0_opsz48.png">
           </footer>
-    </div>
+      </div>
     </div>
   </div>
   <div class="container">
@@ -80,7 +80,7 @@
           <div class="button-container">
             <div class="tooltip-txt"><p class="result">Copied!</p></div>
             <button name="email" type="button" class="js-email-button">email</button>
-            <button name="tg" type="button" class="js-tg-button" onclick="window.open('https://t.me/sophie_natusiterum')">telegram</button>
+            <button name="tg" type="button" class="js-tg-button" onclick="window.open('https://t.me/natusiterum_s')">telegram</button>
           </div>
         </div>
         <footer class="footer-landscape">
@@ -89,12 +89,73 @@
             <div class="bottom_text2"><p class="pink">Wish you a wonderful day!</p></div>
         </footer>
     </div>
-  <footer class="footer-portrait">
-    <div class="bottom_text1"><p class="pink">© 2026 by  Natusiterum</p></div>
-    <div class="star"><p class="staremoji">&#10022;</p></div>
-    <div class="bottom_text2"><p class="pink">Wish you a wonderful day!</p></div>
-</footer>
-  </div>
+    <div class="right">
+      <div class="scroller" id="Up">
+        <div class="scroller__inner" id="First">
+            <picture class="cursor1" id="img1">
+              <source src="assets/thumbnails 540/thumb_1.webp">
+              <img class="scroller-img" src="/assets/thumbnails 540/thumb_1.png">
+            </picture>          
+            <picture class="cursor2" id="img2">
+              <source src="/assets/thumbnails 540/thumb_2.webp">
+              <img class="scroller-img" src="/assets/thumbnails 540/thumb_2.png">
+            </picture>          
+            <picture class="cursor1" id="img3">
+              <source src="/assets/thumbnails 540/thumb_3.webp">
+              <img class="scroller-img" src="/assets/thumbnails 540/thumb_3.png">
+            </picture>
+            <picture class="cursor2" id="img4">
+              <source src="/assets/thumbnails 540/thumb_4.webp">
+              <img class="scroller-img" src="/assets/thumbnails 540/thumb_4.png">
+            </picture>
+        </div>
+      </div>
+      <div class="scroller" id="Middle">
+        <div class="scroller__inner" id="Second">
+            <picture id="img5">
+              <source class="cursor2" src="/assets/thumbnails 540/thumb_5.webp">
+              <img class="scroller-img normal cursor2" src="/assets/thumbnails 540/thumb_5.png">
+            </picture>          
+            <picture class="cursor1" id="img6">
+              <source src="/assets/thumbnails 540/thumb_6.webp">
+              <img class="scroller-img normal cursor1" src="/assets/thumbnails 540/thumb_6.png">
+            </picture>          
+            <picture class="cursor2" id="img7">
+              <source src="/assets/thumbnails 540/thumb_7.webp">
+              <img class="scroller-img normal cursor2" src="/assets/thumbnails 540/thumb_7.png">
+            </picture>
+            <picture class="scroller-img normal cursor1" id="img8">
+              <source src="/assets/thumbnails 540/thumb_8.webp">
+              <img class="scroller-img normal cursor1" src="/assets/thumbnails 540/thumb_8.png">
+            </picture>
+        </div>
+      </div>
+      <div class="scroller" id="Down">
+        <div class="scroller__inner" id="Third">
+            <picture id="img9">
+              <source src="/assets/thumbnails 540/thumb_9.webp">
+              <img class="scroller-img normal cursor1" src="/assets/thumbnails 540/thumb_9.png">
+            </picture>          
+            <picture class="cursor2" id="img10">
+              <source src="/assets/thumbnails 540/thumb_10.webp">
+              <img class="scroller-img normal cursor2" src="/assets/thumbnails 540/thumb_10.png">
+            </picture>          
+            <picture class="cursor1" id="img11">
+              <source src="/assets/thumbnails 540/thumb_11.webp">
+              <img class="scroller-img normal cursor1" src="/assets/thumbnails 540/thumb_11.png">
+            </picture>
+            <picture class="scroller-img normal cursor2" id="img12">
+              <source src="/assets/thumbnails 540/thumb_12.webp">
+              <img class="scroller-img normal cursor2" src="/assets/thumbnails 540/thumb_12.png">
+            </picture>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-portrait">
+      <div class="bottom_text1"><p class="pink">© 2026 by  Natusiterum</p></div>
+      <div class="star"><p class="staremoji">&#10022;</p></div>
+      <div class="bottom_text2"><p class="pink">Wish you a wonderful day!</p></div>
+    </footer>
   </div>
 </div>
 <script src="2024Portfolio.js"></script>

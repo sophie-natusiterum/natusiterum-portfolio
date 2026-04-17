@@ -82,93 +82,31 @@ function switchtoLightTheme() {
 // SCROLLER ANIMATION
 let startBtn = document.getElementById('start');
 
-let rightSide = document.createElement("div");
-container.appendChild(rightSide);
-container.insertBefore(rightSide, container.children[3]);
-rightSide.setAttribute("class", "right");
+let rightSide = document.querySelector(".right");
 rightSide.addEventListener("click", clickElsewhere);
 
-let scrollerUp = document.createElement("div");
-let scrollerMiddle = document.createElement("div");
-let scrollerDown = document.createElement("div");
-scrollerUp.setAttribute("class", "scroller");
-scrollerMiddle.setAttribute("class", "scroller");
-scrollerDown.setAttribute("class", "scroller");
+let scrollerUp = document.getElementById("Up");
+let scrollerMiddle = document.getElementById("Middle");
+let scrollerDown = document.getElementById("Down");
 
-rightSide.appendChild(scrollerUp);
-rightSide.appendChild(scrollerMiddle);
-rightSide.appendChild(scrollerDown);
+let scrollerInner1 = document.getElementById("First");
+let scrollerInner2 = document.getElementById("Second");
+let scrollerInner3 = document.getElementById("Third");
 
-let scrollerInner1 = document.createElement("div");
-let scrollerInner2 = document.createElement("div");
-let scrollerInner3 = document.createElement("div");
-scrollerInner1.setAttribute("class", "scroller__inner")
-scrollerInner2.setAttribute("class", "scroller__inner")
-scrollerInner3.setAttribute("class", "scroller__inner")
 
-scrollerUp.appendChild(scrollerInner1);
-scrollerMiddle.appendChild(scrollerInner2);
-scrollerDown.appendChild(scrollerInner3);
 
-let img1 = document.createElement("img");
-img1.setAttribute("class", "scroller-img cursor1");
-img1.setAttribute("src", "/assets/thumbnails 540/thumb_1.png");
-
-let img2 = document.createElement("img");
-img2.setAttribute("class", "scroller-img normal cursor2");
-img2.setAttribute("src", "/assets/thumbnails 540/thumb_2.png");
-
-let img3 = document.createElement("img");
-img3.setAttribute("class", "scroller-img normal cursor1");
-img3.setAttribute("src", "/assets/thumbnails 540/thumb_3.png");
-
-let img4 = document.createElement("img");
-img4.setAttribute("class", "scroller-img normal cursor2");
-img4.setAttribute("src", "/assets/thumbnails 540/thumb_4.png");
-
-let img9c = document.createElement("img");
-img9c.setAttribute("class", "scroller-img cursor1");
-img9c.setAttribute("src", "/assets/thumbnails 540/thumb_9.png");
-
-let img10c = document.createElement("img");
-img10c.setAttribute("class", "scroller-img normal cursor2");
-img10c.setAttribute("src", "/assets/thumbnails 540/thumb_10.png");
-
-let img5 = document.createElement("img");
-img5.setAttribute("class", "scroller-img normal cursor2");
-img5.setAttribute("src", "/assets/thumbnails 540/thumb_5.png");
-
-let img6 = document.createElement("img");
-img6.setAttribute("class", "scroller-img normal cursor1");
-img6.setAttribute("src", "/assets/thumbnails 540/thumb_6.png");
-
-let img7 = document.createElement("img");
-img7.setAttribute("class", "scroller-img normal cursor2");
-img7.setAttribute("src", "/assets/thumbnails 540/thumb_7.png");
-
-let img8 = document.createElement("img");
-img8.setAttribute("class", "scroller-img normal cursor1");
-img8.setAttribute("src", "/assets/thumbnails 540/thumb_8.png");
-
-let img9 = document.createElement("img");
-img9.setAttribute("class", "scroller-img cursor1");
-img9.setAttribute("src", "/assets/thumbnails 540/thumb_9.png");
-
-let img10 = document.createElement("img");
-img10.setAttribute("class", `scroller-img normal cursor2`);
-img10.setAttribute("src", "/assets/thumbnails 540/thumb_10.png");
-
-let img11 = document.createElement("img");
-img11.setAttribute("class", "scroller-img normal cursor1");
-img11.setAttribute("src", "/assets/thumbnails 540/thumb_11.png");
-
-let img12 = document.createElement("img");
-img12.setAttribute("class", "scroller-img normal cursor2");
-img12.setAttribute("src", "/assets/thumbnails 540/thumb_12.png");
-
-scrollerInner1.append(img1, img2, img12, img3, img10, img4);
-scrollerInner2.append(img5, img6, img7, img8);
-scrollerInner3.append(img9, img10, img11, img12);
+let img1 = document.getElementById("img1");
+let img2 = document.getElementById("img2");
+let img3 = document.getElementById("img3");
+let img4 = document.getElementById("img4");
+let img5 = document.getElementById("img5");
+let img6 = document.getElementById("img6");
+let img7 = document.getElementById("img7");
+let img8 = document.getElementById("img8");
+let img9 = document.getElementById("img9");
+let img10 = document.getElementById("img10");
+let img11 = document.getElementById("img11");
+let img12 = document.getElementById("img12");
 
 // Adding blending mode to everything but the element the mouse is on
 const artworks = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
@@ -190,33 +128,54 @@ rightSide.addEventListener("mouseenter", clickElsewhere);
 rightSide.addEventListener("mouseout", clickElsewhere);
 
 // Create a MediaQueryList object
-const mmObj = window.matchMedia("(orientation: landscape) and (max-width: 1040px) and (min-width: 830px) and (max-height: 459px) and (min-height: 321px), (orientation: landscape) and (max-width: 1637px) and (min-width: 1210px) and (max-height: 585px) and (min-height: 510px), (orientation: landscape) and (max-width: 1644px) and (min-width: 1115px) and (max-height: 629px), (min-width: 745px) and (max-height: 335px), (orientation: landscape) and (max-width: 1112px) and (min-width: 1044px) and (max-height: 379px) and (min-height: 320px), (max-height: 902px) and (min-height: 501px) and (max-width: 1925px) and (min-width: 1645px), (max-height: 500px) and (max-width: 1400px) and (min-width: 1124px), (orientation: portrait) and (max-width: 360px) and (min-width: 300px) and (max-height: 640px), (orientation: landscape) and (max-width: 829px) and (min-width: 656px) and (max-height: 405px) and (min-height: 320px), (orientation: landscape) and (max-width: 1915px) and (min-width: 1835px) and (max-height: 595px) and (min-height: 500px), only screen and (min-width: 1040px) and (min-height: 362px) and (max-height: 630px), (min-width: 1010px) and (min-height: 362px) and (max-height: 630px), (min-width: 700px) and (max-width: 1010px) and (min-height: 320px) and (max-height: 499px), (orientation: landscape) and (min-width: 1175px) and (max-width: 1641px) and (min-height: 631px) and (max-height: 775px), (orientation: portrait) and (max-height: 667px) and (max-width: 375px) and (min-height: 660px) and (min-width: 370px), (orientation: portrait) and (max-height: 736px) and (max-width: 414px) and (min-height: 735px) and (min-width: 410px)")
+const mmObj = window.matchMedia("(min-aspect-ratio: 0.6) and (max-aspect-ratio: 1)");
 
 const scrollers = [scrollerInner1, scrollerInner2, scrollerInner3]
 
-scrollerInner1.addEventListener("animationiteration", myRepeatFunction1);
 function addAnimation() {
-  function chooseRepeatFunc() {
-    if (scrollerInner1.children.length == 6) {
-    scrollerInner1.style.animation="scroll1 10s infinite linear forwards";
-    scrollerInner2.style.animation="scroll1 10s infinite linear reverse";
-    scrollerInner3.style.animation="scroll1 10s infinite linear forwards";
-  } else {
-    scrollerInner1.style.animation="scroll 8s infinite linear forwards";
-    scrollerInner2.style.animation="scroll 8s infinite linear reverse";
-    scrollerInner3.style.animation="scroll 8s infinite linear forwards";
-  }}
-  chooseRepeatFunc();
-};
+  scrollerInner1.style.animation="scroll 8s infinite linear forwards";
+  scrollerInner2.style.animation="scroll 8s infinite linear reverse";
+  scrollerInner3.style.animation="scroll 8s infinite linear forwards";
+  scrollerInner1.addEventListener('animationstart', function() { scrollerInner1.append(scrollerInner1.firstChild); });
+  scrollerInner1.addEventListener('animationiteration', function() { scrollerInner1.append(scrollerInner1.firstElementChild); });
 
-// Call the match function at run time
-removeLastRow(mmObj);
+  scrollerInner2.addEventListener('animationstart', function() { scrollerInner2.prepend(scrollerInner2.lastChild); });
+  scrollerInner2.addEventListener('animationiteration', function() { scrollerInner2.prepend(scrollerInner2.lastElementChild); });
+
+  scrollerInner3.addEventListener('animationstart', function() { scrollerInner3.append(scrollerInner3.firstChild); });
+  scrollerInner3.addEventListener('animationiteration', function() { scrollerInner3.append(scrollerInner3.firstElementChild); });
+};
 
 // Add the match function as a listener for state changes
 mmObj.addEventListener("change", function() {
   removeLastRow(mmObj);
   location.reload();
+  if (scrollerInner1.children.length == 6) {
+    scrollerInner1.style.animationName = "scroll1";
+    scrollerInner2.style.animationName = "scroll1";
+    scrollerInner3.style.animationName = "scroll1";
+    scrollerInner1.style.animationDuration = "10s";
+    scrollerInner2.style.animationDuration = "10s";
+    scrollerInner3.style.animationDuration = "10s";
+  } else {
+    scrollerInner1.style.animationName = "scroll";
+    scrollerInner2.style.animationName = "scroll";
+    scrollerInner3.style.animationName = "scroll";
+    scrollerInner1.style.animationDuration = "8s";
+    scrollerInner2.style.animationDuration = "8s";
+    scrollerInner3.style.animationDuration = "8s";
+  }
 });
+
+function removeLastRow(x) {
+  if (x.matches) {
+    scrollerDown.style.display = "none";
+    scrollerInner1.append(img12, img10);
+    scrollerInner2.append(img9, img11);
+  } else {
+    scrollerDown.style.display = "flex";
+    scrollerInner3.append(img9, img10, img11, img12);
+}};
 
 if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
@@ -247,22 +206,6 @@ rightSide.innerHTML = `
         
         <img class="scroller-img cursor2" src="/assets/thumbnails 540/thumb_12.png" onmouseover="artwork.forEach(blendingMode)" onmouseenter="this.classList.remove('change-color')" onmouseout="artwork.forEach(normalBlending)" alt="" width="320" height="320" onclick="openImgWindow('thumb12')"/>
 `};
-
-function removeLastRow(x) {
-if (x.matches) {
-  scrollerDown.style.display = "none";
-  scrollerInner1.append(img12, img10);
-  scrollerInner2.append(img9, img11);
-} else {
-  scrollerDown.style.display = "flex";
-  scrollerInner3.append(img9, img10, img11, img12);
-}};
-
-function myRepeatFunction1() {
-  scrollerInner1.append(scrollerInner1.firstChild);
-  scrollerInner2.prepend(scrollerInner2.lastChild);
-  scrollerInner3.append(scrollerInner3.firstElementChild);
-};
 
 // IMAGE WINDOW
 let modal = document.getElementById('id01');
