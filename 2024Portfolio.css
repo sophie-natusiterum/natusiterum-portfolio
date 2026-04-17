@@ -694,8 +694,18 @@ button:hover {
 }
 
 .scroller .scroller__inner {
-  width: fit-content;
-  flex-wrap: nowrap;
+    width: fit-content;
+    flex-wrap: nowrap;
+}
+
+.scroller .scroller__inner picture {
+    aspect-ratio: 1 / 1;
+    height: 33%;
+    width: auto;
+}
+
+.scroller .scroller__inner img {
+    object-fit: contain;
 }
 
 #middlescroller {
@@ -711,12 +721,18 @@ button:hover {
 }
 
 @keyframes scroll {
+    from {
+    transform: translate(0);
+    }
   to {
     transform: translate(-25%);
   }
 }
 
 @keyframes scroll1 {
+    from {
+    transform: translate(0);
+    }
     to {
       transform: translate(-16.6%);
     }
@@ -2288,12 +2304,20 @@ button:hover {
     .button {
         font-size: 88%;
     }
+
+    #Down {
+        display: none;
+    }
 }
 
 @media only screen and (orientation: landscape) and (max-width: 829px) and (min-width: 656px) and (max-height: 405px) and (min-height: 320px) {
     .scroller-img {
         height: auto;
         width: 50vh;
+    }
+
+    #Down {
+        display: none;
     }
 }
 
@@ -2319,6 +2343,10 @@ button:hover {
         height: auto;
         width: 50vh;
     }
+
+    #Down {
+        display: none;
+    }
 }
 
 @media only screen and (orientation: landscape) and (max-width: 1009px) and (min-width: 596px) and (max-height: 953px) and (min-height: 500px), screen and (orientation: landscape) and (max-width: 595px) and (min-width: 510px) and (min-height: 501px) {
@@ -2340,12 +2368,7 @@ button:hover {
     }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 700px) and (max-height: 499px) and (min-height: 400px) {
-    .scroller-img {
-    height: auto;
-    width: 50vh;
-    }
-}
+
 
 @media (orientation: portrait) and (prefers-reduced-motion) {
     .container {
