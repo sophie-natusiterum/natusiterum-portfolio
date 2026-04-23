@@ -17,9 +17,18 @@
             <button class="carousel-btn display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
           <div class="carousel" oncontextmenu="return false;">
-            <picture class="image-size"><img class="change-img" oncontextmenu="return false;" src="" alt=""/></picture>
-            <picture class="image-size"><img class="change-img change-img2" oncontextmenu="return false;" src="" alt=""/></picture>
-            <picture class="image-size"><img class="change-img change-img3" oncontextmenu="return false;" src="" alt=""/></picture>
+            <picture class="image-size">
+              <source id="opt-1" src="assets/thumbnails 540/thumb_1.webp">
+              <img class="change-img" oncontextmenu="return false;" src="" alt="first image" loading="lazy"/>
+            </picture>
+            <picture class="image-size">
+              <source id="opt-2" src="assets/thumbnails 540/thumb_1.webp">
+              <img class="change-img change-img2" oncontextmenu="return false;" src="" alt="second image" loading="lazy"/>
+            </picture>
+            <picture class="image-size">
+              <source id="opt-3" src="assets/thumbnails 540/thumb_1.webp">
+              <img class="change-img change-img3" oncontextmenu="return false;" src="" alt="third image" loading="lazy"/>
+            </picture>
             <video class="change-img animations" onclick="playVid()" controls disablePictureInPicture controlsList="nodownload noplaybackrate noremoteplayback" oncontextmenu="return false;" preload="metadata" poster="/assets/img_4.png"><source
               src="/assets/2023-07-31 18-48-43.mp4"
               type="video/mp4"/>
@@ -80,7 +89,7 @@
           <div class="button-container">
             <div class="tooltip-txt"><p class="result">Copied!</p></div>
             <button name="email" type="button" class="js-email-button">email</button>
-            <button name="tg" type="button" class="js-tg-button" onclick="window.open('https://t.me/natusiterum_s')">telegram</button>
+            <!-- <button name="tg" type="button" class="js-tg-button">telegram</button> -->
           </div>
         </div>
         <footer class="footer-landscape">

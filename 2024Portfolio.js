@@ -10,6 +10,9 @@ let manualCopyMobile = document.querySelector('.manual-copy-mobile');
 let mobileModalError = document.querySelector('.modal2');
 let creatorName = document.querySelector('.footer-portrait .bottom_text1');
 let goodWish = document.querySelector('.footer-portrait .bottom_text2');
+let opt1 = document.getElementById('opt-1');
+let opt2 = document.getElementById('opt-2');
+let opt3 = document.getElementById('opt-3');
 
 const headTag = document.getElementsByTagName('head')[0];
 
@@ -350,6 +353,9 @@ if (portfolio.innerText === 'портфолио') {
 async function openImgWindow(clickedImg) {
   switch (clickedImg) {
   case 'thumb1':
+    opt1.src = '/assets/images for carousels/img_1.webp';
+    opt2.src = '/assets/images for carousels/img_1_1.webp';
+    opt3.src = '/assets/images for carousels/img_1_2.webp';
     img01.src = '/assets/images for carousels/img_1.png';
     img01.alt = 'Alice in Wonderland';
     img02.src = '/assets/images for carousels/img_1_1.png';
@@ -359,6 +365,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = 'Alice in Wonderland';
     break;
   case 'thumb2':
+    opt1.src = '/assets/images for carousels/img_2.webp';
+    opt2.src = '/assets/images for carousels/img_2_1.webp';
+    opt3.src = '/assets/images for carousels/img_2_2.webp';
     img01.src = '/assets/images for carousels/img_2.png';
     img01.alt = 'Peanut butter and jelly';
     img02.src = '/assets/images for carousels/img_2_1.png';
@@ -368,6 +377,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = 'PB&J';
     break;
   case 'thumb3':
+    opt1.src = '/assets/images for carousels/img_3.webp';
+    opt2.src = '/assets/images for carousels/img_3_1.webp';
+    opt3.src = '/assets/images for carousels/img_3_2.webp';
     img01.src = '/assets/images for carousels/img_3.png';
     img01.alt = 'Tiny wizard';
     img02.src = '/assets/images for carousels/img_3_1.png';
@@ -377,6 +389,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = 'Wizard in Training';
     break;
   case 'thumb4':
+    opt1.src = '/assets/images for carousels/img_4.webp';
+    opt2.src = '/assets/images for carousels/img_4_1.webp';
+    opt3.src = '/assets/images for carousels/img_4_2.webp';
     img01.src = '/assets/images for carousels/img_4.png';
     img01.alt = 'Clawmachine';
     img02.src = '/assets/images for carousels/img_4_1.png';
@@ -386,6 +401,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = 'Clawception';
     break;
   case 'thumb5':
+    opt1.src = '/assets/images for carousels/img_5.webp';
+    opt2.src = '/assets/images for carousels/img_5_1.webp';
+    opt3.src = '/assets/images for carousels/img_5_2.webp';
     img01.src = '/assets/images for carousels/img_5.png';
     img01.alt = 'Inside of my bag';
     img02.src = '/assets/images for carousels/img_5_1.png';
@@ -395,6 +413,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = "What's in my bag?";
     break;
   case 'thumb6':
+    opt1.src = '/assets/images for carousels/img_6.webp';
+    opt2.src = '/assets/images for carousels/img_6_1.webp';
+    opt3.src = '/assets/images for carousels/img_6_2.webp';
     img01.src = '/assets/images for carousels/img_6.png';
     img01.alt = 'LOTR rings';
     img02.src = '/assets/images for carousels/img_6_1.png';
@@ -404,6 +425,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = 'Rings';
     break;
   case 'thumb7':
+    opt1.src = '/assets/images for carousels/img_7.webp';
+    opt2.src = '/assets/images for carousels/img_7_1.webp';
+    opt3.src = '/assets/images for carousels/img_7_2.webp';
     img01.src = '/assets/images for carousels/img_7.png';
     img01.alt = 'Roboflorists';
     img02.src = '/assets/images for carousels/img_7_1.png';
@@ -413,6 +437,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = 'Roboflorists';
     break;
   case 'thumb8':
+    opt1.src = '/assets/images for carousels/img_8.webp';
+    opt2.src = '/assets/images for carousels/img_8_1.webp';
+    opt3.src = '/assets/images for carousels/img_8_2.webp';
     img01.src = '/assets/images for carousels/img_8.png';
     img01.alt = 'Tiny dragon';
     img02.src = '/assets/images for carousels/img_8_1.png';
@@ -422,6 +449,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = 'AU';
     break;
   case 'thumb9':
+    opt1.src = '/assets/images for carousels/img_9.webp';
+    opt2.src = '/assets/images for carousels/img_9_1.webp';
+    opt3.src = '/assets/images for carousels/img_9_2.webp';
     img01.src = '/assets/images for carousels/img_9.png';
     img01.alt = 'Strawberry jam';
     img02.src = '/assets/images for carousels/img_9_1.png';
@@ -431,6 +461,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = 'Strawberry Confession';
     break;
   case 'thumb10':
+    opt1.src = '/assets/images for carousels/img_10.webp';
+    opt2.src = '/assets/images for carousels/img_10_1.webp';
+    opt3.src = '/assets/images for carousels/img_10_2.webp';
     img01.src = '/assets/images for carousels/img_10.png';
     img01.alt = 'Orange jam';
     img02.src = '/assets/images for carousels/img_10_1.png';
@@ -440,6 +473,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = 'Zesty Message';
     break;
   case 'thumb11':
+    opt1.src = '/assets/images for carousels/img_11.webp';
+    opt2.src = '/assets/images for carousels/img_11_1.webp';
+    opt3.src = '/assets/images for carousels/img_11_2.webp';
     img01.src = '/assets/images for carousels/img_11.png';
     img01.alt = 'Moldy Monster';
     img02.src = '/assets/images for carousels/img_11_1.png';
@@ -449,6 +485,9 @@ async function openImgWindow(clickedImg) {
     headerText.innerText = 'Moldy Monster';
     break;
   case 'thumb12':
+    opt1.src = '/assets/images for carousels/img_12.webp';
+    opt2.src = '/assets/images for carousels/img_12_1.webp';
+    opt3.src = '/assets/images for carousels/img_12_2.webp';
     img01.src = '/assets/images for carousels/img_12.png';
     img01.alt = 'Strawberry Character';
     img02.src = '/assets/images for carousels/img_12_1.png';

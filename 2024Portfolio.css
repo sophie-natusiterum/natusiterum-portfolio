@@ -1333,6 +1333,12 @@ button:hover {
 
 @media screen and (hover: hover) {
     .change-color {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
         filter: grayscale(100%) brightness(100%) invert(30%) contrast(85%) saturate(5%);
         mix-blend-mode: overlay;
     }
